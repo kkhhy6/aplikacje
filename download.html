@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pobierz</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/ico" href="favicon.ico">
+  </head>
+ <body>
+  <h1>Pobierz</h1>
+  
+   
+    <button onclick="document.location=app_path">Pobierz</button>
+  <!--czemu w znaczniku button nie działa atrybut download?-->
+   
+  <script>
+    var url = new URL(document.URL);
+    var app_id = url.searchParams.get("app");
+    console.log(app_id);
+    
+    var app_path = 'apps\\' + app_id + '.apk';
+   
+   </script>
+  </body>
+</html>

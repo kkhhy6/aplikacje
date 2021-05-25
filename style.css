@@ -1,14 +1,7 @@
 body {
-  background-color: #0078FF;
+  background-color: #0078FF; /*RoyalBlue*/
   user-select: none;
   text-align: center;
   font-family: Arial;
 }
 
-html {
-  font-family: Arial;
-}
-
-p {
-  font-family: Arial;
-}
