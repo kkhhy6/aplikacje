@@ -5,9 +5,8 @@
     <!--<link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/ico" href="favicon.ico">-->
   </head>
- <body style="font-family: Arial">
+ <body style="font-family: Arial" onload="loadDoc()">
   <h1>Pobierz</h1>
-  <iframe src="menu.xml"></iframe>
   <table id="opis"></table>
 
     <button onclick="document.location=app_path">Pobierz</button>
@@ -26,7 +25,7 @@
     //frame.parentElement.removeChild(frame);*/
    </script>
 
-<button type="button" onclick="loadDoc()">Get my CD collection</button>
+
    <script>
 function loadDoc() {
   const xhttp = new XMLHttpRequest();
@@ -36,7 +35,7 @@ function loadDoc() {
 }
 function myFunction(xml) {
   const xmlDoc = xml.responseXML;
-  const x = xmlDoc.getElementsByTagName("menu");
+  const x = xmlDoc.getElementsByTagName("p");
   let table="<tr><th>name</th><th>link</th></tr>";
   for (let i = 0; i <x.length; i++) {
     table += "<tr><td>" +
