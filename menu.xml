@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu>
+<p>
+<name>kalkulator</name>
+<link>1</link>
+</p>
+<p>
+<name>inne</name>
+<link>2</link>
+</p>
+</menu>
